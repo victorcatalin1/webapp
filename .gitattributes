@@ -1,3 +1,0 @@
-testwebapp.HTML5-Shipping.data filter=lfs diff=lfs merge=lfs -text
-testwebapp-HTML5-Shipping.data filter=lfs diff=lfs merge=lfs -text
-UE4Game-HTML5-Shipping.wasm filter=lfs diff=lfs merge=lfs -text
