@@ -403,10 +403,10 @@ Module['UE4_fullscreenFilteringMode'] = 0;
 // NOTE: in a future release of UE4 - this whole section WILL GO AWAY (i.e. handled internally)
 
 
-var enableReadFromIndexedDB = (location.search.indexOf('noidbread') == -1);
-var enableWriteToIndexedDB = enableReadFromIndexedDB && (location.search.indexOf('noidbwrite') == -1);
-enableReadFromIndexedDB = false;
-enableWriteToIndexedDB = false;
+var enableReadFromIndexedDB = (location.search.indexOf('noidbread') == 0);
+var enableWriteToIndexedDB = enableReadFromIndexedDB && (location.search.indexOf('noidbwrite') == 0);
+enableReadFromIndexedDB = true;
+enableWriteToIndexedDB = true;
 
 if (!enableReadFromIndexedDB) showWarningRibbon('Running with IndexedDB access disabled.');
 else if (!enableWriteToIndexedDB) showWarningRibbon('Running in read-only IndexedDB access mode.');
