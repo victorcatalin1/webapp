@@ -18,7 +18,7 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'E:/_APLICATII/_APPS/testwebapp/Binaries/HTML5/testwebapp-HTML5-Shipping.data';
+    var PACKAGE_NAME = 'testwebapp-HTML5-Shipping.data';
     var REMOTE_PACKAGE_BASE = 'testwebapp-HTML5-Shipping.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
@@ -149,10 +149,10 @@ Module['FS_createPath']('/testwebapp/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_E:/_APLICATII/_APPS/testwebapp/Binaries/HTML5/testwebapp-HTML5-Shipping.data');
+              Module['removeRunDependency']('datafile_testwebapp-HTML5-Shipping.data');
 
     };
-    Module['addRunDependency']('datafile_E:/_APLICATII/_APPS/testwebapp/Binaries/HTML5/testwebapp-HTML5-Shipping.data');
+    Module['addRunDependency']('datafile_testwebapp-HTML5-Shipping.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
